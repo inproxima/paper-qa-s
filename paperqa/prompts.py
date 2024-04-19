@@ -46,7 +46,7 @@ select_paper_prompt = (
     "Selected keys:"
 )
 citation_prompt = (
-    "Provide the citation for the following text in MLA Format. "
+    "Provide the citation for the following text in APA 7th Edition Format. "
     "If reporting date accessed, the current year is 2024\n\n"
     "{text}\n\n"
     "Citation:"
