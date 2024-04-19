@@ -186,7 +186,7 @@ class Answer(BaseModel):
     references: str = ""
     formatted_answer: str = ""
     dockey_filter: set[DocKey] | None = None
-    summary_length: str = "about 100 words"
+    summary_length: str = "about 500 words"
     answer_length: str = "about 500 words"
     # just for convenience you can override this
     cost: float | None = None
