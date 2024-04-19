@@ -186,8 +186,8 @@ class Answer(BaseModel):
     references: str = ""
     formatted_answer: str = ""
     dockey_filter: set[DocKey] | None = None
-    summary_length: str = "about 500 words"
-    answer_length: str = "about 500 words"
+    summary_length: str = "about 300 words"
+    answer_length: str = "about 300 words"
     # just for convenience you can override this
     cost: float | None = None
     # Map model name to a two-item list of LLM prompt token counts
