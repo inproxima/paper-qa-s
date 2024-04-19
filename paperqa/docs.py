@@ -730,7 +730,7 @@ class Docs(BaseModel):
         query: str,
         k: int = 10,
         max_sources: int = 5,
-        length_prompt="about 100 words",
+        length_prompt="about 500 words",
         answer: Answer | None = None,
         key_filter: bool | None = None,
         get_callbacks: CallbackFactory = lambda x: None,  # noqa: ARG005
@@ -752,7 +752,7 @@ class Docs(BaseModel):
         query: str,
         k: int = 10,
         max_sources: int = 5,
-        length_prompt: str = "about 100 words",
+        length_prompt: str = "about 500 words",
         answer: Answer | None = None,
         key_filter: bool | None = None,
         get_callbacks: CallbackFactory = lambda x: None,  # noqa: ARG005
