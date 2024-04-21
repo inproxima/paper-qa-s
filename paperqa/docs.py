@@ -828,7 +828,7 @@ class Docs(BaseModel):
         bib_str = "\n\n".join(
             [f"{i+1}. ({k}): {c}" for i, (k, c) in enumerate(bib.items())]
         )
-        formatted_answer = f"Question: {answer.question}\n\n{answer_text}\n"
+        formatted_answer = f"User Input: {answer.question}\n\n{answer_text}\n"
         if len(bib) > 0:
             formatted_answer += f"\nReferences\n\n{bib_str}\n"
         answer.answer = answer_text
@@ -847,7 +847,7 @@ class Docs(BaseModel):
             await self.llm_result_callback(post)
             answer.answer = post.text
             answer.add_tokens(post)
-            answer.formatted_answer = f"Question: {answer.question}\n\n{post}\n"
+            answer.formatted_answer = f"User Input: {answer.question}\n\n{post}\n"
             if len(bib) > 0:
                 answer.formatted_answer += f"\nReferences\n\n{bib_str}\n"
         # if self.memory_model is not None:
