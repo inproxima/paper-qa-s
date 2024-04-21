@@ -64,7 +64,7 @@ line-length = 120
 unsafe-fixes = true
 
 [tool.setuptools.packages.find]
-include = ["paperqa*"]
+include = ["paperqas*"]
 
 [tool.tomlsort]
 all = true
