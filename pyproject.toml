@@ -36,7 +36,7 @@ maintainers = [
     {email = "jamesbraza@gmail.com", name = "James Braza"},
     {email = "white.d.andrew@gmail.com", name = "Andrew White"},
 ]
-name = "paper-qa"
+name = "paper-qas"
 readme = "README.md"
 requires-python = ">=3.8"
 urls = {repository = "https://github.com/whitead/paper-qa"}
