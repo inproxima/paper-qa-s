@@ -847,7 +847,7 @@ class Docs(BaseModel):
             await self.llm_result_callback(post)
             answer.answer = post.text
             answer.add_tokens(post)
-            answer.formatted_answer = f"User Input: {answer.question}\n\n{post}\n"
+            answer.formatted_answer = f"Question: {answer.question}\n\n{post}\n"
             if len(bib) > 0:
                 answer.formatted_answer += f"\nReferences\n\n{bib_str}\n"
         # if self.memory_model is not None:
